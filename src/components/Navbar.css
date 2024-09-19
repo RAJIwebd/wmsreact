@@ -1,0 +1,55 @@
+.container{
+  display: flex;
+}
+.profile{
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+.avatar{
+  background-color: #34495e;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  transition: background-color 0.3s ease;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2),inset -4px -4px 10px rgba(255,255,255,0.1);
+}
+.navbar {
+    background: #A9BCD2 ;
+    width: 270px;
+    padding: 20px;
+    height: 100%;
+    position: fixed;
+    flex-direction: column;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: width 0.3s ease-in-out;
+    box-shadow: 4px 0 18px rgba(0, 0, 0, 0.1);
+  }
+.navbar:hover{
+  width: 280px;
+}
+.navbar li{
+  list-style: none;
+}
+
+.navlist ul li a {
+  
+  color: #fff;
+  margin: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.navlist ul li a:hover{
+  background-color:#3498db ;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
