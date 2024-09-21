@@ -1,5 +1,70 @@
-.employee-details {
+.overall{
     margin-left: 280px;
     padding: 20px;
   }
+  .main-content {
+    display: flex;
+    
+    padding: 30px;
+    overflow-y: auto; /* Enable scrolling only for the main content */
+    display: flex; /* To allow centering */
+    flex-direction: row;
+    justify-content: left;
+    border-radius: 12px;
+    background-color:#A9BCD2 ;}
   
+ 
+  
+  /* Employee List */
+  .employee-list {
+    margin-bottom: 10px;
+    width:250px;
+    overflow-y: auto;
+  }
+  
+  .employee-list h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .employee-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .employee-list ul li {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .employee-list ul li:hover {
+    background-color: #ccc;
+  }
+  
+  /* Employee Details */
+  .employee-details {
+    background-color: #66595900;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    background: linear-gradient(#ffffff, #e0e0e0, #E1F4FF, #E1F4FF, #d0d0d0);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+    text-align: center;
+    font-size: 30px;
+
+    
+    
+  }
+  .employee-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .employee-details p {
+    color: #555;
+  }

@@ -5,7 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Employeedetails from './pages/EmployeeDetails'
 import Attendance from './pages/Attendance';
 import Shiftscheduling from './pages/Shiftscheduling';
-import Communication from './pages/Communication';
+
 import Costmanagement from './pages/Costmanagement';
 import './App.css';
 
@@ -20,9 +20,21 @@ function App() {
             <Route path="/Employeedetails" element={<Employeedetails />} />
             <Route path="/Attendance" element={<Attendance />} />
             <Route path="/Shiftscheduling" element={<Shiftscheduling />} />
-            <Route path="/Communication" element={<Communication />} />
+            <Route path="/Communication" render={() => (
+                  <iframe
+    src="http://localhost:5173/"  // Assuming your communication app runs on this port
+    title="Communication App"
+    style={{
+      width: '100%',
+     
+    }}
+  />
+)} />
+
+            
             <Route path="/Costmanagement" element={<Costmanagement />} />
           </Routes>
+          3
         </div>
       </div>
     </Router>

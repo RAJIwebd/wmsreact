@@ -9,7 +9,7 @@ const Navbar = () => {
        <div className="navbar">
          <div className='profile'>
            <div className='avatar'></div>
-            <h2>Manager:RAJI</h2>
+            <h2>MANAGER</h2>
            
           </div>
          <nav className='navlist'>
